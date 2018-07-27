@@ -1,0 +1,426 @@
+\hypertarget{class_point}{}\section{Point Class Reference}
+\label{class_point}\index{Point@{Point}}
+
+
+{\ttfamily \#include $<$point.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point_ad92f2337b839a94ce97dcdb439b4325a}{Point} ()
+\item 
+\hyperlink{class_point_ad093de8201853fec77bfde7f74581e99}{Point} (int newx, int newy)
+\item 
+int \hyperlink{class_point_abe622fffc8785b0c2e06cdac681b9837}{getX} () const 
+\item 
+int \hyperlink{class_point_a10f31e48e2dbc22e3660ca769b8d5d65}{getY} () const 
+\item 
+void \hyperlink{class_point_af8bafa6199e19bc40ed67e177e37fb2c}{setX} (int newx)
+\item 
+void \hyperlink{class_point_aa9a00c4e3b5f09794ca0a760956e9b56}{setY} (int newy)
+\item 
+\hyperlink{class_point}{Point} \& \hyperlink{class_point_afbace8c40e1be384358cc8fc625df4da}{operator=} (const \hyperlink{class_point}{Point} \&other)
+\item 
+void \hyperlink{class_point_a898208563af054e37f0c7af8346c16d0}{operator+=} (const \hyperlink{class_point}{Point} \&right)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point}{Point} \hyperlink{class_point_a96f6a3fd676e84673695954a9c38f9fc}{operator+} (const \hyperlink{class_point}{Point} \&a, const \hyperlink{class_point}{Point} \&b)
+\item 
+\hyperlink{class_point}{Point} \hyperlink{class_point_a7fbe4e73827d1004ae02fb0938280a5a}{operator+} (const \hyperlink{class_point}{Point} \&a, const int \&b)
+\item 
+std\+::ostream \& \hyperlink{class_point_aa02eff2d9aae013f84052606b923d0b4}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{class_point}{Point} \&pt)
+\item 
+std\+::istream \& \hyperlink{class_point_a7dd5860cc8d9f35e2de26c8667138cf2}{operator$>$$>$} (std\+::istream \&in, \hyperlink{class_point}{Point} \&pt)
+\item 
+bool \hyperlink{class_point_a177528c8a1eee37fcda25a89084b8ed6}{operator==} (const \hyperlink{class_point}{Point} \&a, const \hyperlink{class_point}{Point} \&b)
+\item 
+bool \hyperlink{class_point_a6bea9cfb4049115f767ed658959d6648}{operator!=} (const \hyperlink{class_point}{Point} \&a, const \hyperlink{class_point}{Point} \&b)
+\item 
+\hyperlink{class_point}{Point} \hyperlink{class_point_a27eef6ef540fce8451f8aca53ce03047}{operator-\/} (const \hyperlink{class_point}{Point} \&a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic class to represent a point somewhere in 2D space.
+
+\begin{DoxyAuthor}{Author}
+Brent Nash 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Point()}{Point()}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+::\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_ad92f2337b839a94ce97dcdb439b4325a}{}\label{class_point_ad92f2337b839a94ce97dcdb439b4325a}
+Default constructor
+
+\begin{DoxyPostcond}{Postcondition}
+The X and Y coordinates are initialized to zero 
+\end{DoxyPostcond}
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Point(int newx, int newy)}{Point(int newx, int newy)}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+::\+Point (
+\begin{DoxyParamCaption}
+\item[{int}]{newx, }
+\item[{int}]{newy}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_ad093de8201853fec77bfde7f74581e99}{}\label{class_point_ad093de8201853fec77bfde7f74581e99}
+Overloaded constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em newx} & The initial value for the X coordinate \\
+\hline
+{\em newy} & The initial value for the Y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Point@{Point}!getX@{getX}}
+\index{getX@{getX}!Point@{Point}}
+\subsubsection[{\texorpdfstring{get\+X() const }{getX() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Point\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_point_abe622fffc8785b0c2e06cdac681b9837}{}\label{class_point_abe622fffc8785b0c2e06cdac681b9837}
+Accessor for the X coordinate
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+This method does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The integer X coordinate 
+\end{DoxyReturn}
+\index{Point@{Point}!getY@{getY}}
+\index{getY@{getY}!Point@{Point}}
+\subsubsection[{\texorpdfstring{get\+Y() const }{getY() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Point\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_point_a10f31e48e2dbc22e3660ca769b8d5d65}{}\label{class_point_a10f31e48e2dbc22e3660ca769b8d5d65}
+Accessor for the Y coordinate
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+This method does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The integer Y coordinate 
+\end{DoxyReturn}
+\index{Point@{Point}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator+=(const Point \&right)}{operator+=(const Point &right)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{right}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_a898208563af054e37f0c7af8346c16d0}{}\label{class_point_a898208563af054e37f0c7af8346c16d0}
+Overloaded += opreator used to increment the values in the current point by the coordinate values in another point. This will take each of the coordinates in \char`\"{}right\char`\"{} and add them to each of the coordinates in \char`\"{}this\char`\"{} respectively. This implements\+:
+
+\hyperlink{class_point}{Point} a, b; a += b;
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The values in \char`\"{}this\char`\"{} will have been incremented by the values in \char`\"{}right\char`\"{} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em right} & The \hyperlink{class_point}{Point} whose coordinates should be added to the coordinates of this \hyperlink{class_point}{Point} (passed by const reference). \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_point_a898208563af054e37f0c7af8346c16d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Point@{Point}!operator=@{operator=}}
+\index{operator=@{operator=}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator=(const Point \&other)}{operator=(const Point &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} \& Point\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_afbace8c40e1be384358cc8fc625df4da}{}\label{class_point_afbace8c40e1be384358cc8fc625df4da}
+Overloaded = operator used to set two Points equal to each other. Declared as a member function because it changes the current object. This implements\+:
+
+\hyperlink{class_point}{Point} a, b; a = b;
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The values stored inside \char`\"{}this\char`\"{} will be changed to the values stored inside of \char`\"{}other\char`\"{} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \hyperlink{class_point}{Point} whose values should be copied into this \hyperlink{class_point}{Point} (passed by const reference) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \char`\"{}this\char`\"{} so that we can chain \textquotesingle{}=\textquotesingle{} operations together. 
+\end{DoxyReturn}
+\index{Point@{Point}!setX@{setX}}
+\index{setX@{setX}!Point@{Point}}
+\subsubsection[{\texorpdfstring{set\+X(int newx)}{setX(int newx)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::setX (
+\begin{DoxyParamCaption}
+\item[{int}]{newx}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_af8bafa6199e19bc40ed67e177e37fb2c}{}\label{class_point_af8bafa6199e19bc40ed67e177e37fb2c}
+Mutator for the X coordinate
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The X coordinate will be updated to the value of \char`\"{}newx\char`\"{} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em newx} & The new value for the X coordinate \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!setY@{setY}}
+\index{setY@{setY}!Point@{Point}}
+\subsubsection[{\texorpdfstring{set\+Y(int newy)}{setY(int newy)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::setY (
+\begin{DoxyParamCaption}
+\item[{int}]{newy}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_aa9a00c4e3b5f09794ca0a760956e9b56}{}\label{class_point_aa9a00c4e3b5f09794ca0a760956e9b56}
+Mutator for the Y coordinate
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The Y coordinate will be updated to the value of \char`\"{}newy\char`\"{} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em newy} & The new value for the Y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Point@{Point}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator"!=}{operator!=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_point_a6bea9cfb4049115f767ed658959d6648}{}\label{class_point_a6bea9cfb4049115f767ed658959d6648}
+Overloaded operator to compare two Points for inequality. Two points are not equal if any of their individual member coordinates are different. Not a member function, but declared as a friend so it can access member variables. This implements\+:
+
+\hyperlink{class_point}{Point} a, b; if(a != b)
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+No changes 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The \hyperlink{class_point}{Point} on the left side of the != operation (passed by const reference) \\
+\hline
+{\em b} & The \hyperlink{class_point}{Point} on the right side of the != operation (passed by const reference) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool value of \char`\"{}true\char`\"{} if the Points are not equal. False otherwise. 
+\end{DoxyReturn}
+\index{Point@{Point}!operator+@{operator+}}
+\index{operator+@{operator+}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator+}{operator+}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_point_a96f6a3fd676e84673695954a9c38f9fc}{}\label{class_point_a96f6a3fd676e84673695954a9c38f9fc}
+Overloaded + operator for adding two points together. Not a member function, but declared as a friend so it can access member variables. This implements\+:
+
+\hyperlink{class_point}{Point} a, b; \hyperlink{class_point}{Point} c = a + b;
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the current object 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The point on the left side of the + sign (passed by const reference) \\
+\hline
+{\em b} & The point on the right side of the + sign (passed by const reference) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new point object created by adding together the individual coordinates from a \& b (e.\+g. a.\+x + b.\+x, a.\+y + b.\+y, etc.) 
+\end{DoxyReturn}
+\index{Point@{Point}!operator+@{operator+}}
+\index{operator+@{operator+}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator+}{operator+}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const int \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_point_a7fbe4e73827d1004ae02fb0938280a5a}{}\label{class_point_a7fbe4e73827d1004ae02fb0938280a5a}
+Overloaded + operator for adding an integer to a point. Not a member function, but declared as a friend so it can access member variables. This implements\+:
+
+\hyperlink{class_point}{Point} a; int x; \hyperlink{class_point}{Point} c = a + x;
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the current object 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The point on the left side of the + sign (passed by const reference) \\
+\hline
+{\em b} & The int on the right side of the + sign (passed by const reference) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new point object created by adding b to each of the coordinates of a (e.\+g. a.\+x + b, a.\+y + b, etc.) 
+\end{DoxyReturn}
+\index{Point@{Point}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator-\/}{operator-}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_point_a27eef6ef540fce8451f8aca53ce03047}{}\label{class_point_a27eef6ef540fce8451f8aca53ce03047}
+Overloaded unary operator negation operator to multiply each coordinate of the input \hyperlink{class_point}{Point} by -\/1. Not a member function, but declared as a friend so it can access member variables. This implements\+:
+
+\hyperlink{class_point}{Point} a, b; a = -\/b;
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+No changes 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The \hyperlink{class_point}{Point} on the right side of the -\/ operation (passed by const reference) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A point whose values are the negation of the values in the input \hyperlink{class_point}{Point} a (e.\+g. if (5,6) is input, then (-\/5,-\/6) should be returned). 
+\end{DoxyReturn}
+\index{Point@{Point}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{const {\bf Point} \&}]{pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_point_aa02eff2d9aae013f84052606b923d0b4}{}\label{class_point_aa02eff2d9aae013f84052606b923d0b4}
+Overloaded $<$$<$ operator for inserting a point in an output stream. Not a member function, but declared as a friend so it can access member variables. This implements\+:
+
+\hyperlink{class_point}{Point} a; cout $<$$<$ a;
+
+Outputs a \hyperlink{class_point}{Point} in the form \char`\"{}(x,y)\char`\"{} (no quotes)
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The ostream \char`\"{}out\char`\"{} will have \char`\"{}pt\char`\"{} inserted into it 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output stream being modified (passed by reference...will be changed!) \\
+\hline
+{\em pt} & The point being inserted into the output stream (passed by const reference) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the input parameter \char`\"{}out\char`\"{} so that we can chain multiple $<$$<$ operators together. 
+\end{DoxyReturn}
+\index{Point@{Point}!operator==@{operator==}}
+\index{operator==@{operator==}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator==}{operator==}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{a, }
+\item[{const {\bf Point} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_point_a177528c8a1eee37fcda25a89084b8ed6}{}\label{class_point_a177528c8a1eee37fcda25a89084b8ed6}
+Overloaded operator to compare two Points for equality. Two points are equal if each of their individual member coordinates are equal. Not a member function, but declared as a friend so it can access member variables. This implements\+:
+
+\hyperlink{class_point}{Point} a, b; if(a == b)
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+No changes 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The \hyperlink{class_point}{Point} on the left side of the == operation (passed by const reference) \\
+\hline
+{\em b} & The \hyperlink{class_point}{Point} on the right side of the == operation (passed by const reference) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool value of \char`\"{}true\char`\"{} if the Points are equal. False otherwise. 
+\end{DoxyReturn}
+\index{Point@{Point}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Point@{Point}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{in, }
+\item[{{\bf Point} \&}]{pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_point_a7dd5860cc8d9f35e2de26c8667138cf2}{}\label{class_point_a7dd5860cc8d9f35e2de26c8667138cf2}
+Overloaded $>$$>$ operator for extracting a point from an input stream. Not a member function, but declared as a friend so it can access member variables. This implements\+:
+
+\hyperlink{class_point}{Point} a; cin $>$$>$ a;
+
+Expects a \hyperlink{class_point}{Point} to be entered in the form \char`\"{}\+X Y\char`\"{} (no quotes).
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The point \char`\"{}a\char`\"{} will be changed by whatever information was extracting from the istream 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The input stream being modified (passed by reference...will be changed!) \\
+\hline
+{\em pt} & The point having input stream information extracted into it (passed by reference...will be changed!) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the input parameter \char`\"{}in\char`\"{} so that we can chain multiple $>$$>$ operators together. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{point_8h}{point.\+h}\item 
+\hyperlink{point_8cpp}{point.\+cpp}\end{DoxyCompactItemize}
