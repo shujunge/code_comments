@@ -1,6 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="node2" href="$class_random_size_shape_factory.html#aebd390118a1e8874fc7f2e8c5a62a627" title="RandomSizeShapeFactory\l::createShape" alt="" coords="104,5,283,47"/>
-<area shape="rect" id="node4" href="$class_shape.html#a3703ac99c3b3008da7b57ddbe00b7d29" title="Shape::getType" alt="" coords="136,71,251,98"/>
-<area shape="rect" id="node5" href="$class_shape.html#ad9454ee04617290547e7529180b1beae" title="Shape::getArea" alt="" coords="137,122,249,149"/>
-<area shape="rect" id="node3" href="$shapefactory_8cpp.html#a88a1bdc60bab4dbbd33eee6e7b49ddc6" title="getRandomNumber" alt="" coords="331,13,465,39"/>
-</map>
