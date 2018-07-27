@@ -71,4 +71,17 @@ void   add(int x,int y);
 ```
 
 
+#[travis-ci](https://travis-ci.org/)</br>
+
+travis_ci注册和github帐号关联</br>
+
+* [python](travis_ci/travis_ci_python)
+
+* [c++](travis_ci/travis_ci_c++)
+
+
+#[Codecov](https://codecov.io/)</br>
+
+
+
 

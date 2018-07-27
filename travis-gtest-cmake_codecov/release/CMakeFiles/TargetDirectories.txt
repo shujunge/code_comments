@@ -1,0 +1,4 @@
+/home/zf/Downloads/travis-gtest-cmake-example/release/CMakeFiles/edit_cache.dir
+/home/zf/Downloads/travis-gtest-cmake-example/release/CMakeFiles/project1.dir
+/home/zf/Downloads/travis-gtest-cmake-example/release/CMakeFiles/rebuild_cache.dir
+/home/zf/Downloads/travis-gtest-cmake-example/release/CMakeFiles/project1_lib.dir

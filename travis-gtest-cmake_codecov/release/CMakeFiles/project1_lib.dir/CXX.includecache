@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/project1.h
+iostream
+-
+
+/home/zf/Downloads/travis-gtest-cmake-example/src/project1.cpp
+project1.h
+/home/zf/Downloads/travis-gtest-cmake-example/src/project1.h
+
