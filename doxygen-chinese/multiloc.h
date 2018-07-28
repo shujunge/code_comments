@@ -2,6 +2,12 @@
 // Created by zf on 18-3-23.
 //
 
+///doxygen对c++代码注释参考:https://blog.csdn.net/czyt1988/article/details/8901191
+///
+///
+///
+///
+
 #ifndef CPLUSPLUS_LOCATION_H
 #define CPLUSPLUS_LOCATION_H
 
@@ -25,26 +31,18 @@ typedef vector<one_Tuple> two_Tuple;/**< 使用two_Tuple代替vector<vector<doub
 typedef vector<two_Tuple> three_Tuple;/**< 使用three_Tuple代替vector<vector<vector<double>>>*/
 
 
-/**
- * @brief 对一个二维的vector<vector<double>>的list进行按照每一个vector<double>的第２个元素进行升序
- *
- * @param list是vector<vector<double>>类型
- * @param temp为int类型
- *
- * @return 无返回
- *
- */
+/// \brief 对一个二维的vector<vector<double>>的list进行按照每一个vector<double>的第２个元素进行升序
+/// \param list是vector<vector<double>>类型
+/// \param temp为int类型
+/// \return 无返回
 void sortarry(two_Tuple&list,int temp);
 
-/**
- * @brief 判断value元素是否属于2维vector中的第一个元素,如果value属于list中返回true,否则返回false.
- *
- * @param value为double类型
- * @param list是vector<vector<double>>类型
- *
- * @return bool类型
- *
- */
+
+
+/// \brief 判断value元素是否属于2维vector中的第一个元素,如果value属于list中返回true,否则返回false.
+/// \param value为double类型
+/// \param list是vector<vector<double>>类型
+/// \return bool类型
 bool finditems(double value,two_Tuple& list);
 
 /**
