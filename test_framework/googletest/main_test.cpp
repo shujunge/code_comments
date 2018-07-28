@@ -1,7 +1,7 @@
 
-#include <iostram>
+#include <iostream>
 #include "gtest/gtest.h"
-
+using namespace std;
 using testing::Test;
 
 ///
@@ -25,26 +25,18 @@ class Test_Sort : public Test
     }
 };
 
-
-TEST_F(Test_Sort,read_file)
+int add(int x,int y)
 {
+    return x+y;
+}
 
-    one_Tuple m_coordinate;
-    one_Tuple angle;
-    //正确路径输入测试
-    string filename="test_data/simtarget_data";
-    bool result=read_file(filename,m_coordinate,angle);
-    ASSERT_TRUE(result);
-    //错误路径输入测试
-    filename="1";
-    result=read_file(filename,m_coordinate,angle);
-    ASSERT_FALSE(result);
 
-    //输入错误的路径测试
-    filename="test_data/angle0.dot";
-    result=read_file(filename,m_coordinate,angle);
-    ASSERT_FALSE(result);
-
+TEST_F(Test_Sort,add)
+{
+    ASSERT_EQ(add(3,7),10);
+    ASSERT_EQ(add(3,1.0),4.0);
+    ASSERT_TRUE(add(1.0,1.0));
+    ASSERT_TRUE(add(1.0,1));
 }
 
 ///
