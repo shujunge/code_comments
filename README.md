@@ -1,7 +1,7 @@
 # code_comments
 =======
 ## Doxygen for c++
-* [demo](https://github.com/shujunge/code_comments/tree/master/doxygen-cmake/docs/html)
+* [demo](https://github.com/shujunge/code_comments/tree/master/doxygen-cmake/docs/html/index.html)
 
 * [注释风格](https://blog.csdn.net/czyt1988/article/details/8901191)
 
