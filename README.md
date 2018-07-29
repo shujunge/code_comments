@@ -31,10 +31,10 @@ void   add(int x,int y);
 
 * 中文文档生成
 ```
->>>cd ./doxygen-chinese
->>>doxygen Doxyfile
->>>cd ./out/latex
->>>vi  refman.tex
+>>>　cd ./doxygen-chinese
+>>>　doxygen Doxyfile
+>>>　cd ./out/latex
+>>>　vi  refman.tex
 
 将
 \begin{document} 
@@ -54,10 +54,10 @@ void   add(int x,int y);
 ```
 * 英文文档生成
 ```
->>>cd ./doxygen-english
->>>doxygen Doxyfile
->>>cd ./out/latex
->>>make
+>>>　cd ./doxygen-english
+>>>　doxygen Doxyfile
+>>>　cd ./out/latex
+>>>　make
 ```
 
 ## sphinx for python
@@ -129,7 +129,7 @@ Examples:
 >>> make html
 
 ```
-* 删除文件
+## 删除文件
 ```
 >>> rm ./sphinx/source/build/doctrees/*.doctree ##只保留index.doctree
 >>> rm ./sphinx/source/build/html
