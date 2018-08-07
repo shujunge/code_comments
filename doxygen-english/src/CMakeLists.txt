@@ -1,4 +1,3 @@
-# William Wu, 2013-03-25 22:41
 include_directories (${doxygen_shape_demo_SOURCE_DIR}/src)
 link_directories (${doxygen_shape_demo_BINARY_DIR}/src)
 set (LIBS circle point rectangle shape shapefactory triangle)
@@ -8,8 +7,3 @@ endforeach (lib)
 set (CORELIBS  )
 add_executable (shape_demo main.cpp)
 target_link_libraries (shape_demo ${CORELIBS} ${LIBS} )
-# for debugging --- print out all variable names:
-# get_cmake_property(_variableNames VARIABLES)
-# foreach (_variableName ${_variableNames})
-#    message(STATUS "${_variableName}=${${_variableName}}")
-# endforeach()
